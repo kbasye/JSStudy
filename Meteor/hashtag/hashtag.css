@@ -1,0 +1,15 @@
+/* CSS declarations go here */
+
+.left{
+	float: left;
+	width: 25%;
+}
+
+.right{
+	float: right;
+	width: 75%;
+}
+
+small{
+	padding-left: 20px;
+}
