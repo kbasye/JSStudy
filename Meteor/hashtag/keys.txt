@@ -1,0 +1,17 @@
+
+https://instagram.com/oauth/authorize/?client_id=da8ceea4a38f4b5d978a896055d06947&redirect_uri=http://localhost:3000/&response_type=token
+
+
+ACCESS TOKEN
+
+https://api.instagram.com/v1/tags/bbg/media/recent?max_tag_id=1083089456920465227?access_token=2166491120.da8ceea.cf76bdd8350e4d9e94e3ad74c6eee5ca
+
+
+require 'open-uri'
+require 'json'
+
+var url = 'https://api.instagram.com/v1/tags/bbg/media/recent?access_token=2166491120.da8ceea.cf76bdd8350e4d9e94e3ad74c6eee5ca'
+
+var photos = open(url).read
+
+var json = JSON.parse(photos)
